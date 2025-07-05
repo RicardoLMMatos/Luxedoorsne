@@ -13,3 +13,14 @@ var span = document.getElementsByClassName("close")[0];
 
 span.onclick = function() {modal.style.display = "none";}
 modal.onclick = function() {modal.style.display = "none";}
+
+
+// move o scroll//
+
+    AOS.init({
+      offset: 100,
+      duration: 600,
+      easing: 'ease-in-out',
+      delay: 0,
+    });
+ 

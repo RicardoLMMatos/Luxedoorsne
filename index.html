@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Google fonts link-->
+    <link rel="icon" type="image/x-icon" href="/favicon-32x32.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap" rel="stylesheet">
@@ -13,12 +14,14 @@
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
 
-    <title>Doorforce Northeast</title>
+
+    <title>Luxedoors</title>
+    <script src=" https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js "></script>
+    <link href=" https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css " rel="stylesheet">
 </head>
 
 <body>
     <header class="header">
-
         <nav class="navbar">
             <div class="logo">
                 <img src="media/lockforce logo_resized(1).png" class="logo-img" alt="Lockforce Logo">
@@ -30,17 +33,16 @@
                 <li><a href="#team">Team</a></li>
                 <li><a href="#contact-section">Contact us</a></li>
             </ul>
-            <i class="fas fa-phone"></i><a class="phone-number" href="tel:123-456-7890"
-                class="phone-number">123-456-7890</a>
+            <a class="phone-number" href="tel:123-456-7890"><i class="fas fa-phone"></i>07834782579</a>
         </nav>
     </header>
 
     <div class="hero">
-         <video controls autoplay muted loop class="hero-video">
-  <source src="./media/hero-video.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-<img src="./media/luxe-hero.png" class="hero-img" alt="Lockforce Logo">         
+        <video controls autoplay muted loop class="hero-video">
+            <source src="/media/hero-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <img src="media/luxe-hero.png" class="hero-img" alt="Lockforce Logo">
     </div>
 
 
@@ -48,20 +50,27 @@ Your browser does not support the video tag.
     <section class="welcome-section">
         <div class="container welcome-section-container">
             <div class="four-of-four welcome-section-conteiner-content">
-                <h1>Welcome to LUXEDOORS</h1>
-                <p>At Doorforce, we specialize in providing high-quality door and window solutions tailored to your
-                    needs. Our team of
-                    experienced professionals is dedicated to ensuring your home is secure, stylish, and
-                    energy-efficient. Discover the
-                    difference with Doorforce today!</p>
+                <h1>Welcome to Luxedoors</h1>
+                <p>Welcome to Luxedoors – Your Trusted Door & Window Installation Experts
+                    At Luxedoor, we specialize in secure, stylish, and reliable solutions for every entry point in your
+                    home or business. Whether you need internal or external
+                    door installations, window replacements, or internal and external fire-rated doors, our expert team
+                    delivers top-quality craftsmanship with a focus on safety, durability, and design.
+                    From sleek interior doors to robust external entrances, precision-fitted windows, and certified
+                    internal and external fire doors, Luxedoor is your go-to
+                    partner for comprehensive installation services tailored to your needs.
+                </p>
+                <p>Security. Style. Safety.</p>
+                <h3>That’s the Luxedoor promise.</h3>
             </div>
         </div>
     </section>
-    <section class="services" id="services">
+    <section class="services" id="services" data-aos="fade-up">
+
         <div class="container services-container">
             <div class="three-of-four services-card">
                 <div class="card-top">
-                    <img src="./media/pvc_door.jpg" class="service-img" alt="Lockforce Logo">
+                    <img src="/media/pvc_door.jpg" class="service-img" alt="Lockforce Logo">
                 </div>
                 <div class="card-bottom">
                     <h2>Door services</h2>
@@ -74,7 +83,7 @@ Your browser does not support the video tag.
             </div>
             <div class="three-of-four services-card">
                 <div class="card-top">
-                    <img src="./media/pvc_window.jpg" class="service-img" alt="Lockforce Logo">
+                    <img src="/media/pvc_window.jpg" class="service-img" alt="Lockforce Logo">
                 </div>
                 <div class="card-bottom">
                     <h2>Window installation</h2>
@@ -87,7 +96,7 @@ Your browser does not support the video tag.
             </div>
             <div class="three-of-four services-card">
                 <div class="card-top">
-                    <img src=".media/pvc_door2.jpg" class="service-img" alt="Lockforce Logo">
+                    <img src="/media/pvc_door2.jpg" class="service-img" alt="Lockforce Logo">
                 </div>
                 <div class="card-bottom">
                     <h2>Custom door solutions</h2>
@@ -102,24 +111,51 @@ Your browser does not support the video tag.
         </div>
     </section>
 
-    <section class="gallery" id="gallery">
+    <section class=" section why-us-section"  data-aos="fade-up">
+        <div class="container">
+            <div class="two-of-four" data-aos="fade-right">
+                <div>
+                   <img src="/media/pvc_door2.jpg" class="two-of-four-img" alt="Lockforce Logo">
+                    
+                </div>
+            </div>
+             <div class="two-of-four" data-aos="fade-left">
+                <div>
+                    <h2>Why choose Luxedoors?</h2>
+                    <p>At Luxedoor, we pride ourselves on delivering exceptional service and quality craftsmanship. Our
+                        team of experts is dedicated to ensuring your doors and windows are not only secure but also
+                        enhance the beauty of your property.</p>
+                    <ul>
+                        <li>Expert Installation</li>
+                        <li>High-Quality Materials</li>
+                        <li>Custom Solutions</li>
+                        <li>Competitive Pricing</li>
+                    </ul    >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery" data-aos="fade-up">
         <div class="container-gallery">
             <div class="heading">
-                <h2 class="h2-heading-text">See some of our work</h2>
+                <h2 class="h2-heading-text">See some of our work
+                    <span class="underline"></span>
+                </h2>
             </div>
             <div class="box">
                 <div class="example-photo-row">
-                    <img src="./media/pvc_door.jpg" class="image" id="img1" alt="Gallery Image 1">
-                    <img src="./media/IMG-20250524-WA0024.jpg" class="image" id="img02" alt="Gallery Image 1">
+                    <img src="/media/pvc_door.jpg" class="image" id="img1" alt="Gallery Image 1">
+                    <img src="/media/IMG-20250524-WA0024.jpg" class="image" id="img02" alt="Gallery Image 1">
                 </div>
 
                 <div class="example-photo-row">
-                    <img src="./media/pvc_door.jpg" class="image" id="img03" alt="Gallery Image 1">
-                    <img src="./media/pvc_door.jpg" class="image" id="img04" alt="Gallery Image 1">
+                    <img src="/media/pvc_door.jpg" class="image" id="img03" alt="Gallery Image 1">
+                    <img src="/media/pvc_door.jpg" class="image" id="img04" alt="Gallery Image 1">
                 </div>
                 <div class="example-photo-row">
-                    <img src="./media/pvc_door.jpg" class="image" id="img03" alt="Gallery Image 1">
-                    <img src="./media/pvc_door.jpg" class="image" id="img04" alt="Gallery Image 1">
+                    <img src="/media/pvc_door.jpg" class="image" id="img03" alt="Gallery Image 1">
+                    <img src="/media/pvc_door.jpg" class="image" id="img04" alt="Gallery Image 1">
                 </div>
 
 
@@ -132,7 +168,7 @@ Your browser does not support the video tag.
             <img class="modal-content" id="img" src="/media/pvc_door.jpg" alt="Modal Image">
     </section>
 
-    <section class="reviews-section" id="reviews">
+    <section class="reviews-section" id="reviews" data-aos="fade-up">
         <div class="container container-reviews">
             <div class="four-of-four">
                 <h2 class="green-h2">We are proud of our customers reviews</h2>
@@ -140,16 +176,17 @@ Your browser does not support the video tag.
             </div>
         </div>
     </section>
-    <section class="team-section">
+    <section class="team-section" data-aos="fade-up">
         <div class="container container-team">
             <div class="four-of-four">
                 <h2 class="h2-heading-text">Meet Lea the proud company owner</h2>
+                <span class="underline"></span>
             </div>
         </div>
         <div class="container">
             <div class="four-of-four">
                 <div class="card-top">
-                    <img src="./media/Leah.JPG" class="team-photo" alt="photo">
+                    <img src="/media/Leah.JPG" class="team-photo" alt="photo">
                 </div>
                 <div class="card-bottom">
                     <h2>About me</h2>
@@ -161,12 +198,12 @@ Your browser does not support the video tag.
                         Proudly Keeping Morpeth Safe!</p>
                 </div>
             </div>
-            
-            </div>
+
+        </div>
         </div>
         </div>
     </section>
-    <section class="contact-section" id="contact-section">
+    <section class="contact-section" id="contact-section" data-aos="fade-up">
         <div class="container contact-container">
             <div class="four-of-four">
                 <h2>REQUEST YOUR FREE QUOTE</h2>
@@ -182,7 +219,7 @@ Your browser does not support the video tag.
             </div>
         </div>
     </section>
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-up">
         <div class="container">
             <div class="four-of-four">
                 <ul class="footer-ul">
@@ -195,7 +232,6 @@ Your browser does not support the video tag.
                     <li><a href="https://www.facebook.com/profile.php?id=61571371482328" target="_blank"><i
                                 class="fab fa-facebook"></i></a>
                         <a href="https://www.facebook.com/doorforce" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.facebook.com/doorforce" target="_blank"><i class="fab fa-youtube"></i></a>
                     </li>
 
                 </ul>

@@ -178,6 +178,7 @@ transition: all 0.3s ease-in-out;
   width: 100%;
 }
 
+
 /* Flex rules */
 .container {
   display: flex;
@@ -232,6 +233,14 @@ transition: all 0.3s ease-in-out;
 }
 
 /* Navigation */
+
+.header {
+  width: 100%;
+  background-color: #647c90;
+  position: sticky;
+  top: 0;
+  z-index: 100000;
+}
 .navbar {
    display: flex;
   flex-direction: row;
@@ -265,26 +274,34 @@ transition: all 0.3s ease-in-out;
 
 .phone-number {
   color: rgb(186, 184, 108);
-  font-size: 4rem;
   font-weight: 600;
-  font-size: 2rem;
- 
+  font-size: 2rem; 
 }
+
 
 .fa-phone {
   color: rgb(186, 184, 108);
   font-size: 3rem;
   margin-left: 30rem;
-  margin-right: 2rem;
 
 }
+
+.fa-phone:hover {
+  color: rgb(186, 184, 108);
+  transition: all 0.3s ease-in-out;
+   animation: tilt-shaking 0.3s infinite;
+ 
+
+}
+
+
+
 
 .logo-img {
   width: 15rem;
   height: 10rem;
   margin-right: 20rem;
 }
-
 
 
 
@@ -335,7 +352,6 @@ transition: all 0.3s ease-in-out;
 
 .service-img {
  background-size: cover;
- /* width: 100%; */
     height: 43rem;
     background-blend-mode: screen;
     --webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%) ;
@@ -399,7 +415,6 @@ textarea:focus  {
       transition: 0.3s;
     }
     
-    .image:hover {opacity: 0.9;}
     
     /* The Modal (background) */
     .modal {
@@ -416,7 +431,7 @@ textarea:focus  {
       background-color: rgba(0,0,0,0.9);
     }
     
-    /* Modal Content (image) */
+    /* Modal Content (image) */ 
     .modal-content {
       margin: auto;
       display: block;
@@ -488,7 +503,6 @@ textarea:focus  {
   text-decoration-color: rgb(186, 184, 108) ;
   text-underline-offset: 1rem;
   font-weight: 600;
-
 }
 
 
@@ -528,17 +542,92 @@ textarea:focus  {
 /* Social Media Icons */
 .social-network-links-navbar {
   color: rgb(186, 184, 108);
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 .h2-heading-text {
   font-size: 4rem;
-   text-decoration: underline;
-  text-decoration-thickness: .5rem;
-  text-decoration-color: rgb(186, 184, 108) ;
-  text-underline-offset: 1rem;
   font-weight: 600;
+}
 
+.underline{
+  display: block;
+  width: 12.5vw;
+  height: .5rem;
+  background-color: rgb(186, 184, 108);
+  margin-top: .5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+@keyframes tilt-shaking {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes tilt-n-move-shaking {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(5px, 5px) rotate(5deg); }
+  50% { transform: translate(0, 0) rotate(0eg); }
+  75% { transform: translate(-5px, 5px) rotate(-5deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+@keyframes vertical-shaking {
+  0% { transform: translateY(0) }
+  25% { transform: translateY(5px) }
+  50% { transform: translateY(-5px) }
+  75% { transform: translateY(5px) }
+  100% { transform: translateY(0) }
+}
+
+@keyframes horizontal-shaking {
+  0% { transform: translateX(0) }
+  25% { transform: translateX(5px) }
+  50% { transform: translateX(-5px) }
+  75% { transform: translateX(5px) }
+  100% { transform: translateX(0) }
+}
+
+@keyframes jump-shaking {
+  0% { transform: translateX(0) }
+  25% { transform: translateY(-9px) }
+  35% { transform: translateY(-9px) rotate(17deg) }
+  55% { transform: translateY(-9px) rotate(-17deg) }
+  65% { transform: translateY(-9px) rotate(17deg) }
+  75% { transform: translateY(-9px) rotate(-17deg) }
+  100% { transform: translateY(0) rotate(0) }
+}
+
+@keyframes skew-x-shake {
+  0% { transform: skewX(-15deg); }
+  5% { transform: skewX(15deg); }
+  10% { transform: skewX(-15deg); }
+  15% { transform: skewX(15deg); }
+  20% { transform: skewX(0deg); }
+  100% { transform: skewX(0deg); }  
+}
+
+@keyframes skew-y-shake {
+  0% { transform: skewY(-15deg); }
+  5% { transform: skewY(15deg); }
+  10% { transform: skewY(-15deg); }
+  15% { transform: skewY(15deg); }
+  20% { transform: skewY(0deg); }
+  100% { transform: skewY(0deg); }  
 }
 
 
+
+/* Media Queries */
+
+@media only screen and (min-width: 1px) and (max-width: 639px){
+
+}
+
+@media screen and (min-width: 640px) and (max-width: 1440px) {
+
+  
+}
