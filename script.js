@@ -15,12 +15,12 @@ span.onclick = function() {modal.style.display = "none";}
 modal.onclick = function() {modal.style.display = "none";}
 
 
-// move o scroll//
+// move on scroll//
 
     AOS.init({
-      offset: 100,
+      offset: 200,
       duration: 600,
       easing: 'ease-in-out',
-      delay: 0,
+      delay: 1,
     });
  

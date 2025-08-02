@@ -22,19 +22,34 @@
 
 <body>
     <header class="header">
-        <nav class="navbar">
-            <div class="logo">
-                <img src="media/lockforce logo_resized(1).png" class="logo-img" alt="Lockforce Logo">
+        <section class="section-nav">
+            <nav class="navbar desktop-nav" >
+                <div class="logo">
+                    <img src="media/lockforce logo_resized(1).png" class="logo-img" alt="Lockforce Logo">
+                </div>
+                <ul class="nav-links links ">
+                    <li><a href="welcome">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact-section">Contact us</a></li>
+                    <a class="phone-number" href="tel:123-456-7890"></i>CALL US</a>
+                </ul>
+            </nav>
+            <div class="hamburger" onclick="myFunction()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
             </div>
-            <ul class="nav-links links">
-                <li><a href="welcome">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#contact-section">Contact us</a></li>
-            </ul>
-            <a class="phone-number" href="tel:123-456-7890"><i class="fas fa-phone"></i>07834782579</a>
-        </nav>
+        </section>
+                    <nav class="mobile-menu" id="mobileNav"  style="display: none;">
+                    <li><a href="welcome">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact-section">Contact us</a></li>
+                    <a href="tel:123-456-7890"></i>CALL US</a>
+            </nav>
     </header>
 
     <div class="hero">
@@ -44,8 +59,6 @@
         </video>
         <img src="media/luxe-hero.png" class="hero-img" alt="Lockforce Logo">
     </div>
-
-
 
     <section class="welcome-section">
         <div class="container welcome-section-container">
@@ -61,76 +74,149 @@
                     partner for comprehensive installation services tailored to your needs.
                 </p>
                 <p>Security. Style. Safety.</p>
-                <h3>That’s the Luxedoor promise.</h3>
-            </div>
-        </div>
-    </section>
-    <section class="services" id="services" data-aos="fade-up">
-
-        <div class="container services-container">
-            <div class="three-of-four services-card">
-                <div class="card-top">
-                    <img src="/media/pvc_door.jpg" class="service-img" alt="Lockforce Logo">
-                </div>
-                <div class="card-bottom">
-                    <h2>Door services</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci repudiandae minima possimus
-                        magni ipsum maiores. At,
-                        fugit voluptatem vitae deserunt aliquid deleniti aliquam, rem rerum dolores inventore a eligendi
-                        quis.</p>
-                    <button class="button">Learn More</button>
-                </div>
-            </div>
-            <div class="three-of-four services-card">
-                <div class="card-top">
-                    <img src="/media/pvc_window.jpg" class="service-img" alt="Lockforce Logo">
-                </div>
-                <div class="card-bottom">
-                    <h2>Window installation</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe quia ipsam praesentium? Autem,
-                        eligendi!
-                        Unde sed hic ad quo facilis iure incidunt maiores quidem possimus numquam ipsa labore, debitis
-                        voluptatibus.</p>
-                    <button class="button">Learn More</button>
-                </div>
-            </div>
-            <div class="three-of-four services-card">
-                <div class="card-top">
-                    <img src="/media/pvc_door2.jpg" class="service-img" alt="Lockforce Logo">
-                </div>
-                <div class="card-bottom">
-                    <h2>Custom door solutions</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe quia ipsam praesentium? Autem,
-                        eligendi!
-                        Unde sed hic ad quo facilis iure incidunt maiores quidem possimus numquam ipsa labore, debitis
-                        voluptatibus.</p>
-                    <button class="button"><a href="https://bmapprocaldoorportalretail.azurewebsites.net/">Learn
-                            more</a></button>
-                </div>
+                <p>That’s the Luxedoors promise.</p>
+                <h3>Check our services below</h3>
             </div>
         </div>
     </section>
 
-    <section class=" section why-us-section"  data-aos="fade-up">
+    <section class="section-composite-doors" id="services" data-aos="fade-up">
         <div class="container">
-            <div class="two-of-four" data-aos="fade-right">
+            <div class="two-of-four text" data-aos="fade-right">
                 <div>
-                   <img src="/media/pvc_door2.jpg" class="two-of-four-img" alt="Lockforce Logo">
-                    
+                    <h2>Composite Doors Built to Last</h2>
+                    <p>
+                        At Luxe Doors and Windows, Doors and Windows, we only install high-grade composite doors that
+                        combine strength, style, and
+                        security. Our doors are built
+                        using a solid timber core or Foam filled with a metal reinforcing frame for high-performance.
+                        advanced locking systems—giving you
+                        long-lasting durability, excellent energy efficiency, and peace of mind.
+                        hether you're upgrading for looks or improving home security, our composite doors offer the
+                        perfect balance of quality and performance</p>
+                    <a href="https://www.windowsoftware.co.uk/windowcad7/?interface=composite&username=luxedoorsne&product=d75cda4c-cd9e-416c-8dcf-0ef1fa4a9029"
+                        target="_blank">
+                        <button class="button">Build your own door</button></a>
                 </div>
             </div>
-             <div class="two-of-four" data-aos="fade-left">
+            <div class="two-of-four media" data-aos="fade-left">
+                <div>
+                    <img src="/media/grey-composite-door.jpg" class="two-of-four-img" alt="Lockforce Logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-upvc" data-aos="fade-up">
+        <div class="container">
+            <div class="two-of-four media" data-aos="fade-right">
+                <div>
+                    <img src="/media/pvc_window.jpg" class="two-of-four-img" alt="Lockforce Logo">
+                </div>
+            </div>
+            <div class="two-of-four text" data-aos="fade-left">
+                <div>
+                    <h2>Quality uPVC Doors & Windows</h2>
+                    <p>
+                        Our uPVC doors and windows are designed for efficiency, security, and style.
+                        We use only premium-grade uPVC that won’t warp, fade, or crack—ensuring your home stays warm,
+                        quiet, and secure all year round.
+                        With a range of modern styles and finishes, our installations are low-maintenance,
+                        weather-resistant,
+                        and built to last. Whether you're replacing tired units or upgrading for better energy
+                        performance, we've got the perfect fit for your property.</p>
+                    <button class="button">Enquire Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-composite-doors" data-aos="fade-up">
+        <div class="container">
+            <div class="two-of-four text" data-aos="fade-right">
+                <div>
+                    <h2>Sleek Aluminium Bifold Doors</h2>
+                    <p>
+                        Bring the outside in with our premium aluminium bifold doors—perfect for creating open,
+                        light-filled spaces. Engineered for smooth operation and slim sightlines, our bifolds offer a
+                        modern,
+                        high-performance solution for both homes and commercial properties.
+                        Built from strong, lightweight aluminium, these doors are low-maintenance, energy-efficient,
+                        and available in a range of colours and finishes to suit your space.</p>
+                    <button class="button">Enquire Now</button>
+                </div>
+            </div>
+            <div class="two-of-four media" data-aos="fade-left">
+                <div>
+                    <img src="/media/bifold-door.jpg" class="two-of-four-img" alt="Lockforce Logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-fire-doors" data-aos="fade-up">
+        <div class="container">
+            <div class="two-of-four media" data-aos="fade-right">
+                <div>
+                    <img src="/media/fire-door.webp" class="two-of-four-img" alt="Lockforce Logo">
+
+                </div>
+            </div>
+            <div class="two-of-four text" data-aos="fade-left">
+                <div>
+                    <h2>Certified Fire Doors for Maximum Protection</h2>
+                    <p>
+                        At Luxe Doors and Windows, we supply and install certified fire doors designed to meet strict
+                        safety regulations. Our fire doors are tested and rated to provide critical protection in the
+                        event of a fire—helping to contain flames and smoke, and giving occupants valuable time to
+                        evacuate.
+                        Built with high-quality materials and fitted with intumescent seals and fire-rated hardware, our
+                        fire doors are ideal for both residential and commercial settings where safety is a priority.
+                        Trust us to install fire doors that not only look good but also help save lives.</p>
+                    <button class="button">Enquire Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-internal-doors" data-aos="fade-up">
+        <div class="container">
+            <div class="two-of-four text" data-aos="fade-right">
+                <div>
+                    <h2>Stylish Internal Doors to Suit Every Home</h2>
+                    <p>Upgrade your interior with our range of high-quality internal doors, designed to add style,
+                        privacy, and functionality to any room. Whether you’re after a modern minimalist look or
+                        something more traditional, we offer a wide variety of finishes, colours, and designs to match
+                        your décor.
+                        All our internal doors are built for durability, with smooth operation and solid construction
+                        you can rely on. From classic panel doors to contemporary flush styles, we’ve got something to
+                        suit every taste and budget.</p>
+                    <button class="button">Enquire Now</button>
+                </div>
+            </div>
+            <div class="two-of-four media" data-aos="fade-left">
+                <div>
+                    <img src="/media/internal-door.jpg" class="two-of-four-img" alt="Lockforce Logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-why-us" data-aos="fade-up">
+        <div class="container">
+            <div class="two-of-four why-us text" data-aos="fade-up">
+
                 <div>
                     <h2>Why choose Luxedoors?</h2>
                     <p>At Luxedoor, we pride ourselves on delivering exceptional service and quality craftsmanship. Our
                         team of experts is dedicated to ensuring your doors and windows are not only secure but also
                         enhance the beauty of your property.</p>
-                    <ul>
+                    <ul class="why-us-list">
                         <li>Expert Installation</li>
                         <li>High-Quality Materials</li>
                         <li>Custom Solutions</li>
                         <li>Competitive Pricing</li>
-                    </ul    >
+                        <li><img src="/media/fensa-approved.png" class="fensa-logo" alt="fensa logo"></li>
                 </div>
             </div>
         </div>
@@ -139,23 +225,23 @@
     <section class="gallery" id="gallery" data-aos="fade-up">
         <div class="container-gallery">
             <div class="heading">
-                <h2 class="h2-heading-text">See some of our work
-                    <span class="underline"></span>
+                <h2 class="h2-heading-text">See some of our work</h2>
+                <span class="underline"></span>
                 </h2>
             </div>
             <div class="box">
                 <div class="example-photo-row">
-                    <img src="/media/pvc_door.jpg" class="image" id="img1" alt="Gallery Image 1">
-                    <img src="/media/IMG-20250524-WA0024.jpg" class="image" id="img02" alt="Gallery Image 1">
+                    <img src="/media/2main.jpg" class="image" id="img01" alt="Gallery Image 1">
+                    <img src="/media/12.jpg" class="image" id="img02" alt="Gallery Image 1">
                 </div>
 
                 <div class="example-photo-row">
-                    <img src="/media/pvc_door.jpg" class="image" id="img03" alt="Gallery Image 1">
-                    <img src="/media/pvc_door.jpg" class="image" id="img04" alt="Gallery Image 1">
+                    <img src="/media/12.jpg" class="image" id="img03" alt="Gallery Image 1">
+                    <img src="/media/13.jpg" class="image" id="img04" alt="Gallery Image 1">
                 </div>
                 <div class="example-photo-row">
-                    <img src="/media/pvc_door.jpg" class="image" id="img03" alt="Gallery Image 1">
-                    <img src="/media/pvc_door.jpg" class="image" id="img04" alt="Gallery Image 1">
+                    <img src="/media/4.jpg" class="image" id="img03" alt="Gallery Image 1">
+                    <img src="/media/7.jpg" class="image" id="img04" alt="Gallery Image 1">
                 </div>
 
 
@@ -176,32 +262,43 @@
             </div>
         </div>
     </section>
-    <section class="team-section" data-aos="fade-up">
+
+    <section class="team-section" id="team" data-aos="fade-up">
         <div class="container container-team">
-            <div class="four-of-four">
-                <h2 class="h2-heading-text">Meet Lea the proud company owner</h2>
+            <div class="four-of-four" data-aos="fade-up">
+                <h2 class="h2-heading-text">Meet Lea the company owner</h2>
                 <span class="underline"></span>
             </div>
         </div>
         <div class="container">
-            <div class="four-of-four">
-                <div class="card-top">
-                    <img src="/media/Leah.JPG" class="team-photo" alt="photo">
-                </div>
-                <div class="card-bottom">
-                    <h2>About me</h2>
-                    <p>My name is Lea Ternent and I'm a local locksmith who lives and serves Morpeth and the wider
-                        Northumberland area.
-                        Across my pages I have collected 380+ 5 star reviews making me the most reviewed locksmith based
-                        in Northumberland.
-                        Please take a moment to read my local reviews from Morpeth to know you are in safe hands.
-                        Proudly Keeping Morpeth Safe!</p>
-                </div>
+            <div class="two-of-four" data-aos="fade-right">
+                <img src="/media/Lea-photo.JPG" class="team-photo" alt="photo">
             </div>
+            <div class="two-of-four" data-aos="fade-left">
+                <h2>About me</h2>
+                <p>Hi, I’m Lea Ternent — the proud owner of Luxe Doors North East. I was born and raised in Alnwick,
+                    Northumberland,
+                    and now live in Morpeth with my fiancée and our three amazing kids. Everything I do, both in life
+                    and in business,
+                    is driven by pride, integrity, and the desire to do things right — first time, every time.
+                    Before launching Luxe Doors, I built a strong reputation running my highly rated locksmith business,
+                    Lockforce Northumberland. Through that work,
+                    I saw countless cases of poor-quality door and window installations — jobs where customers were left
+                    believing their door was supposed to “just be like that.”
+                    I knew things could be done better — and that’s exactly why Luxe Doors was born.
+                    My background also includes military service in the Commandos, where I learned the value of
+                    precision, discipline, and attention to detail
+                    — qualities I bring into every single project.
+                    At Luxe Doors North East, we’re not just selling doors and windows — we’re raising the standard for
+                    how they’re installed. I work alongside Alex,
+                    an expert joiner whose confidence, knowledge, and eye for detail set us apart from the rest.
+                    And best of all — we deliver customer service that is second to none. We take pride in being
+                    approachable, reliable, and professional from
+                    the first call to the final fit. When you choose Luxe Doors, you’re choosing quality, honesty, and a
+                    team that genuinely cares.</p>
+            </div>
+        </div>
 
-        </div>
-        </div>
-        </div>
     </section>
     <section class="contact-section" id="contact-section" data-aos="fade-up">
         <div class="container contact-container">
@@ -222,7 +319,7 @@
     <footer class="footer" data-aos="fade-up">
         <div class="container">
             <div class="four-of-four">
-                <ul class="footer-ul">
+                <ul class="footer-ul" >
                     <li><a href="#welcome">Home</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#gallery">Gallery</a></li>
@@ -231,7 +328,8 @@
                     <p>Follow us on</p>
                     <li><a href="https://www.facebook.com/profile.php?id=61571371482328" target="_blank"><i
                                 class="fab fa-facebook"></i></a>
-                        <a href="https://www.facebook.com/doorforce" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/luxedoorsne/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
                     </li>
 
                 </ul>
@@ -241,6 +339,17 @@
                 </a>
             </div>
         </div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("mobileNav");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
     </footer>
     <!--js links-->
 
