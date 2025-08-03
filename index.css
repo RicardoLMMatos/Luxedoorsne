@@ -814,6 +814,7 @@ i {
 li a {
   text-decoration: none;
 }
+}
 
 
 
@@ -856,10 +857,10 @@ li a {
 .mobile-menu{
   display: none!important;
 }
-  #more {display: none!important;}
-#myBtn { display: none!important;}
+  /* #more {display: none!important;}
+#myBtn { display: none!important;} */
 }
- }
+ 
 
 
 
