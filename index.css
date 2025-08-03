@@ -732,80 +732,81 @@ textarea:focus {
 }
 .button {
   width: 50vw;
+  margin: 0.8rem 0.1rem
 }
 .two-of-four{
   width: 100%;
   height: auto;
-  padding: 2rem;
+  padding-bottom: 0.6rem;
+  padding-top: 0.6rem;
+
 }
-.team-photo {
+
+.four-of-four{
   width: 100%;
   height: auto;
- 
-}
-.logo-img{
-  margin-left: -68px;
-  width: 10rem;
+  padding-bottom: 0.6rem;
+  padding-top: 0.6rem;
 
+}
+
+.logo-img{
+  margin-left: -60px;
+  border-radius: 0.5rem;
+}
+
+.fensa-logo {
+  width: 100%;
+  height: 5rem;
+  text-align: center;
 }
 
 h1 {
   font-size: 2.6rem;
- }
+  /* 28px */}
 h2 {
+  font-size: 2.2rem;
+  /* 22px */}
+h3 {
+  font-size: 1.8rem;
+  /* 18px */
+} 
+  p {
+    font-size: 1.6rem;}
+  .h2-heading-text {
   font-size: 2.2rem;
 }
 
 .h2-heading-text {
   font-size: 2.2rem;
 }
-h3 {
-  font-size: 1.8rem;
+
+.container-gallery {
+  padding: 1.9rem;
 }
-  p {
-    font-size: 1.6rem;
-  }
+  .team-photo {
+  width: 100%;
+  height:30vh;
+  margin-top: -2rem;
+  margin-bottom: 0.9rem;
+}
 
-  i {
-    font-size: 4rem;
-    padding-right: 0.6rem;
-    
-  }
-
-  .fensa-logo {
-    width: 100%;
-    height: 5rem;
-  }
+i {
+  font-size: 4rem;
+  padding-right: 0.5rem;
+}
 
   .two-of-four-img {
-    width: 100%;
-    height: 30rem;
-    object-fit: cover;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
- 
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+} 
   }
 
-  .two-of-four {
-    padding: .5rem;
-  }
 
-  .button {
-    margin: 1rem;
-  }
 
-  .underline {
-    width: 50%;
-    height: .5rem;
-    margin-top: 1rem;
 
-  }
-  
-  .team-photo {
-    width: 100%;
-    height: 30vh;
-    margin-bottom: 2rem;
-  }
-}
 
 @media screen and (min-width: 640px) and (max-width: 1023px) {
  .hero-img{
@@ -831,10 +832,6 @@ h3 {
   width: 100%;
   height: auto;
  
-}
-.logo-img{
-  margin-left: -34rem;
-  width: 30rem;
 }
 }
  
