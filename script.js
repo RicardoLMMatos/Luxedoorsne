@@ -25,9 +25,7 @@ modal.onclick = function() {modal.style.display = "none";}
       disable: 'mobile',
     });
  
-
-
-function ReadMore() {
+function readMore() {
   var dots = document.getElementById("dots");
   var moreText = document.getElementById("more");
   var btnText = document.getElementById("myBtn");

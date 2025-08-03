@@ -191,9 +191,17 @@ i:hover {
 
 }
 
-.readmore-btn {
+.read-more-btn {
   background-color: #647c90;
   color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 1;
+  -webkit-transition: color 150ms ease-in-out;
+  transition: color 150ms ease-in-out;
 }
 
 
@@ -814,10 +822,15 @@ i {
 li a {
   text-decoration: none;
 }
+
+#more {display: none;
 }
-
-
-
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 75vw;
+}
+}
 
 
 @media screen and (min-width: 640px) and (max-width: 1023px) {
@@ -842,9 +855,6 @@ li a {
   height: auto;
  
 }
-
-#more {display: none;}
-#myBtn { display: none!important;}
 }
  
 
@@ -856,11 +866,11 @@ li a {
 }
 .mobile-menu{
   display: none!important;
+} 
+#myBtn {
+  display: none;}
 }
-  /* #more {display: none!important;}
-#myBtn { display: none!important;} */
-}
- 
+
 
 
 
