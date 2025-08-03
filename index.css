@@ -191,6 +191,12 @@ i:hover {
 
 }
 
+.readmore-btn {
+  background-color: #647c90;
+  color: #fff;
+}
+
+
 
 .button:after {
   content: '';
@@ -835,6 +841,9 @@ li a {
   height: auto;
  
 }
+
+#more {display: none;}
+#myBtn { display: none!important;}
 }
  
 
@@ -847,6 +856,11 @@ li a {
 .mobile-menu{
   display: none!important;
 }
+  #more {display: none!important;}
+#myBtn { display: none!important;}
+}
  }
 
-}
+
+
+
