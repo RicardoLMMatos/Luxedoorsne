@@ -40,7 +40,6 @@
             </div>
         </section>
                     <nav class="mobile-menu" id="mobileNav"  style="display: none;">
-                    <li><a href="welcome">Home</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#team">Team</a></li>
@@ -76,8 +75,8 @@
             </div>
         </div>
     </section>
-
-    <section class="section-composite-doors" id="services" data-aos="fade-up">
+    <span id="services"></span>
+    <section class="section-composite-doors" data-aos="fade-up">
         <div class="container">
             <div class="two-of-four text" data-aos="fade-right">
                 <div>
@@ -219,7 +218,8 @@
         </div>
     </section>
 
-    <section class="gallery" id="gallery" data-aos="fade-up">
+    <span id="gallery"></span>
+    <section class="gallery" data-aos="fade-up">
         <div class="container-gallery">
             <div class="heading">
                 <h2 class="h2-heading-text">See some of our work</h2>
@@ -260,7 +260,8 @@
         </div>
     </section>
 
-    <section class="team-section" id="team" data-aos="fade-up">
+    <span id="team"></span>
+    <section class="team-section" data-aos="fade-up">
         <div class="container container-team">
             <div class="four-of-four" data-aos="fade-up">
                 <h2 class="h2-heading-text">Meet Lea the company owner</h2>
@@ -295,9 +296,10 @@
                     team that genuinely cares.</p>
             </div>
         </div>
-
     </section>
-    <section class="contact-section" id="contact-section" data-aos="fade-up">
+
+    <span id="contact-section"></span>
+    <section class="contact-section" data-aos="fade-up">
         <div class="container contact-container">
             <div class="four-of-four">
                 <h2>REQUEST YOUR FREE QUOTE</h2>
@@ -337,11 +339,7 @@
                 </a>
             </div>
         </div>
-    </footer>
-
-    <!--js links-->
-     <script src=" https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js "></script>  
-<script>
+        <script>
 function myFunction() {
   var x = document.getElementById("mobileNav");
   if (x.style.display === "block") {
@@ -351,11 +349,16 @@ function myFunction() {
   }
 }
 </script>
+    </footer>
+
+    <!--js links-->
+     <script src=" https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js "></script>  
+
     <script src="//code.jquery.com/jquery-3.6.2.min.js" defer></script>
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
     <script src="/script.js" defer></script>
     <script id="shapo-embed-js" type="text/javascript" src="https://cdn.shapo.io/js/embed.js" defer></script>
-
+    
 </body>
 
 </html>

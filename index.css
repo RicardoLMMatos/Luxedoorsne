@@ -287,6 +287,7 @@ i:hover {
   padding: .5rem;
   background-color: #647c90;
   position: sticky;
+  overflow: hidden;
   top: 0;
 }
 
@@ -323,7 +324,6 @@ i:hover {
   width: 15rem;
   height: 10rem;
   margin-right: 20rem;
-  margin-bottom: -40px;
   background-color: #647c90;
   padding: 1rem;
 }
@@ -734,7 +734,7 @@ textarea:focus {
   display: none;
 }
 .button {
-  width: 50vw;
+  width: 40vw;
   margin: 0.8rem 0.1rem
 }
 .two-of-four{
@@ -754,8 +754,7 @@ textarea:focus {
 }
 
 .logo-img{
-  margin-left: -60px;
-  border-radius: 0.5rem;
+  height: 6rem;
 }
 
 .fensa-logo {
@@ -805,7 +804,10 @@ i {
   object-fit: cover;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 } 
-  }
+
+li a {
+  text-decoration: none;
+}
 
 
 
@@ -817,9 +819,6 @@ i {
   }
   .container{
     flex-direction: column!important;
-  }
-  .text{
-
   }
   .media{
     order: -1;
@@ -850,3 +849,4 @@ i {
 }
  }
 
+}

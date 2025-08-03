@@ -22,5 +22,10 @@ modal.onclick = function() {modal.style.display = "none";}
       duration: 600,
       easing: 'ease-in-out',
       delay: 1,
+      disable: 'mobile',
     });
  
+
+
+
+
