@@ -810,7 +810,7 @@ h3 {
   .team-photo {
   width: 100%;
   height:40vh;
-  margin-top: -2rem;
+  margin-top: -1rem;
   margin-bottom: 0.9rem;
 }
 
@@ -844,7 +844,7 @@ textarea {
 
 .underline {
   width: 25vw;
-  height: .3rem;  
+  height: .3rem; 
 }
 
 .order-two {
