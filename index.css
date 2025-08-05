@@ -844,8 +844,15 @@ textarea {
 
 .underline {
   width: 25vw;
-  height: .3rem; 
+  height: .3rem;  
 }
+
+.order-two {
+  order: 2;
+}
+
+.order-three {
+  order: 3;
 }
 
 
@@ -886,8 +893,9 @@ textarea {
 #myBtn {
   display: none;}
 }
+}
 
 
-
-
+.disclaimer p {font-size: 1.2rem;
+}
 
