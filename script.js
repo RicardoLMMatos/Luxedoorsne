@@ -25,6 +25,8 @@ modal.onclick = function() {modal.style.display = "none";}
       disable: 'mobile',
     });
  
+
+// Read more and read less functionality
 function readMore() {
   var dots = document.getElementById("dots");
   var moreText = document.getElementById("more");

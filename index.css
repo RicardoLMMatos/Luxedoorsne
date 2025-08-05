@@ -479,7 +479,7 @@ input:valid,
 textarea:focus {
   outline: none;
   border: 0.8px solid #ccc;
-  border-color: #647c90;
+  border-color: rgb(186, 184, 108);
 }
 
 /* Gallery Section */
@@ -749,7 +749,7 @@ textarea:focus {
   }
   .container{
     flex-direction: column!important;
-    padding: 1rem;
+    padding: 0.5rem;
   }
   .nav-links{
   display: none;
@@ -826,7 +826,7 @@ i {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 } 
 
-li a {
+li  {
   text-decoration: none;
 }
 
@@ -850,11 +850,6 @@ textarea {
 .order-two {
   order: 2;
 }
-
-.order-three {
-  order: 3;
-}
-
 
 @media screen and (min-width: 640px) and (max-width: 1023px) {
  .hero-img{
