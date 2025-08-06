@@ -726,6 +726,12 @@ textarea:focus {
   right: 16px;
   top:1.5rem;
  
+  .mobile-menu li {
+    text-decoration: none;
+    text-transform: uppercase;
+    list-style: none;
+}
+
 }
 .mobile-menu{
   color: white;
