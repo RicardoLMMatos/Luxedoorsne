@@ -850,7 +850,7 @@ textarea {
 .order-two {
   order: 2;
 }
-
+}
 @media screen and (min-width: 640px) and (max-width: 1023px) {
  .hero-img{
     height: auto;
@@ -888,7 +888,7 @@ textarea {
 #myBtn {
   display: none;}
 }
-}
+
 
 
 .disclaimer p {font-size: 1.2rem;
