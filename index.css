@@ -359,6 +359,7 @@ i:hover {
 .mobile-menu li {
   text-decoration: none;
   text-transform: uppercase;
+  list-style: none!important;
 }
 
 /* Social Media Icons */
