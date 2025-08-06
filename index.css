@@ -232,6 +232,11 @@ i:hover {
   width: 100%;
 }
 
+.finance-img {
+ box-shadow: none;
+
+
+}
 
 /* Flex rules */
 .container {
