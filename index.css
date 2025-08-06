@@ -738,6 +738,7 @@ textarea:focus {
 .mobile-menu li + li{
   margin-top: 1rem;
   padding: 2rem;
+  list-style: none!important;
 }
 .mobile-menu li + a{
   margin-top: 1rem;
