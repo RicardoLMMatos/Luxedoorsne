@@ -232,11 +232,6 @@ i:hover {
   width: 100%;
 }
 
-.finance-img {
- box-shadow: none;
-
-
-}
 
 /* Flex rules */
 .container {
@@ -442,6 +437,14 @@ i:hover {
 
 .card-bottom {
   padding: 1rem;
+}
+
+/*Finance Section */
+
+.finance-img {
+ box-shadow: none;
+ width: 100% ;
+ height: 50rem; 
 }
 
 /*Why us section */
