@@ -45,15 +45,6 @@ function readMore() {
 } 
 
 // Burger menu functionality
-
-// function burgerMenu() {
-//   var x = document.getElementById("mobileNav");
-//   if (x.style.display === "block") {
-//     x.style.display = "none";
-//   } else {
-//     x.style.display = "block";
-//   }
-// }
 function burgerMenu() {
   var nav = document.getElementById("mobileNav");
   
@@ -68,7 +59,7 @@ function burgerMenu() {
       // Close menu if:
       // - The click is on an <a> link
       // - Or anywhere in the nav container
-      if (e.target.tagName === "A" || e.target === nav) {
+      if (e.target.tagName === "A" || e.target === mobileNav) {
         nav.style.display = "none";
         nav.removeEventListener("click", handleNavClick); // Remove listener to prevent duplicates
       }
