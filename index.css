@@ -734,6 +734,7 @@ textarea:focus {
   position: absolute;
   right: 16px;
   top:1.5rem;
+}
  
   .mobile-menu li {
     text-decoration: none;
@@ -741,7 +742,6 @@ textarea:focus {
     list-style: none;
 }
 
-}
 .mobile-menu{
   color: white;
   font-size: 18px;
@@ -869,7 +869,12 @@ textarea {
 .order-two {
   order: 2;
 }
+.top-margin {
+  position: relative; top: -6rem; visibility: hidden;
 }
+}
+
+
 @media screen and (min-width: 640px) and (max-width: 1023px) {
  .hero-img{
     height: auto;

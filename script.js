@@ -54,3 +54,22 @@ function burgerMenu() {
     x.style.display = "block";
   }
 }
+
+const burgerButton = document.getElementById('burger-button');
+const mobileNav = document.getElementById("mobileNav");
+
+burgerButton.addEventListener('click', toggleMenu);
+mobileMenu.addEventListener('click', toggleMenu); // Also close on touch inside the menu
+
+function toggleMenu() {
+  mobileMenu.classList.toggle('active');
+  // Optionally, hide the burger button when the menu is open and show it when closed
+  burgerButton.style.display = mobileMenu.classList.contains('active') ? 'none' : 'block';
+}
+
+// Close the menu if the user clicks outside of it
+document.addEventListener('click', function(event) {
+  if (!mobileMenu.contains(event.target) && !burgerButton.contains(event.target) && mobileMenu.classList.contains('active')) {
+    toggleMenu();
+  }
+});
