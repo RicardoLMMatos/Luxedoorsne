@@ -46,30 +46,32 @@ function readMore() {
 
 // Burger menu functionality
 
+// function burgerMenu() {
+//   var x = document.getElementById("mobileNav");
+//   if (x.style.display === "block") {
+//     x.style.display = "none";
+//   } else {
+//     x.style.display = "block";
+//   }
+// }
 function burgerMenu() {
-  var x = document.getElementById("mobileNav");
-  if (x.style.display === "block") {
-    x.style.display = "none";
+  var nav = document.getElementById("mobileNav");
+  
+  // Toggle menu visibility
+  if (nav.style.display === "block") {
+    nav.style.display = "none";
   } else {
-    x.style.display = "block";
+    nav.style.display = "block";
+
+    // Add click listener only when menu is open
+    nav.addEventListener("click", function handleNavClick(e) {
+      // Close menu if:
+      // - The click is on an <a> link
+      // - Or anywhere in the nav container
+      if (e.target.tagName === "A" || e.target === nav) {
+        nav.style.display = "none";
+        nav.removeEventListener("click", handleNavClick); // Remove listener to prevent duplicates
+      }
+    });
   }
 }
-
-const burgerButton = document.getElementById('burger-button');
-const mobileNav = document.getElementById("mobileNav");
-
-burgerButton.addEventListener('click', toggleMenu);
-mobileMenu.addEventListener('click', toggleMenu); // Also close on touch inside the menu
-
-function toggleMenu() {
-  mobileMenu.classList.toggle('active');
-  // Optionally, hide the burger button when the menu is open and show it when closed
-  burgerButton.style.display = mobileMenu.classList.contains('active') ? 'none' : 'block';
-}
-
-// Close the menu if the user clicks outside of it
-document.addEventListener('click', function(event) {
-  if (!mobileMenu.contains(event.target) && !burgerButton.contains(event.target) && mobileMenu.classList.contains('active')) {
-    toggleMenu();
-  }
-});
