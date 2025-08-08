@@ -26,6 +26,7 @@ modal.onclick = function() {modal.style.display = "none";}
     });
  
 
+
 // Read more and read less functionality
 function readMore() {
   var dots = document.getElementById("dots");
@@ -42,3 +43,14 @@ function readMore() {
     moreText.style.display = "inline";
   }
 } 
+
+// Burger menu functionality
+
+function burgerMenu() {
+  var x = document.getElementById("mobileNav");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
