@@ -22,7 +22,7 @@
         <section class="section-nav">
             <nav class="navbar desktop-nav" >
                 <div class="logo">
-                    <img src="media/lockforce logo_resized(1).png" class="logo-img" alt="Lockforce Logo">
+                    <img src="/media/lockforce logo_resized(1).png" class="logo-img" alt="Lockforce Logo">
                 </div>
                 <ul class="nav-links links ">
                     <li><a href="#services">Services</a></li>
@@ -30,7 +30,7 @@
                     <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#team">Team</a></li>
                     <li><a href="#contact-section">Contact us</a></li>
-                    <a class="phone-number" href="tel:123-456-7890"></i>CALL US</a>
+                    <a class="phone-number" href="tel:00447393820305">CALL US</a>
                 </ul>
             </nav>
             <div class="hamburger"  onclick="burgerMenu()">
@@ -39,30 +39,33 @@
                 <div class="bar"></div>
             </div>        
                 <nav class="mobile-menu" id="mobileNav"  style="display: none;">
+                  <ul>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#finance">finance</a></li>
                     <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#team">Team</a></li>
                     <li><a href="#contact-section">Contact us</a></li>
-                    <a href="tel:123-456-7890"></i>CALL US</a>
+                    <a href="tel:00447393820305">CALL US</a>
+                  </ul>
             </nav>
         </section>
     </header>
     <!--HERO SECTION-->
     <div class="hero">
-        <video controls autoplay muted loop class="hero-video">
-            <source src="/media/hero-video.mp4" type="video/mp4">
+        <video autoplay mute loop controlslist="nofullscreen nodownload noremoteplayback noplaybackrate foobar" playsinline class="hero-video">
+           <source src="../media/hero-video.webm" type="video/webm">
+          <source src="../media/hero-video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <img src="media/luxe-hero.png" class="hero-img" alt="Lockforce Logo">
+        <img src="./media/luxe-hero.png" class="hero-img" alt="Lockforce Logo">
     </div>
 
     <section class="welcome-section">
         <div class="container welcome-section-container">
             <div class="four-of-four welcome-section-conteiner-content">
-                <h1>Welcome to Luxedoors</h1>
-                <p>Welcome to Luxedoors – Your Trusted Door & Window Installation Experts
-                    At Luxedoor, we specialize in secure, stylish, and reliable solutions for every entry point in your
+                <h1>Welcome to Luxe Doors</h1>
+                <p>Your Trusted Door & Window Installation Experts.
+                    At Luxe Doors, we specialize in secure, stylish, and reliable solutions for every entry point in your
                     home or business. Whether you need internal or external
                     door installations, window replacements, or internal and external fire-rated doors, our expert team
                     delivers top-quality craftsmanship with a focus on safety, durability, and design.
@@ -71,7 +74,7 @@
                     partner for comprehensive installation services tailored to your needs.
                 </p>
                 <p>Security. Style. Safety.</p>
-                <p>That’s the Luxedoors promise.</p>
+                <p>That’s the Luxe Doors promise.</p>
                 <h3>Check our services below</h3>
             </div>
         </div>
@@ -110,7 +113,7 @@
         <div class="container">
             <div class="two-of-four media 0rder-one" data-aos="fade-right">
                 <div>
-                    <img src="/media/pvc_window.webp" class="two-of-four-img" alt="Lockforce Logo">
+                    <img src="/media/upvc-window.png" class="two-of-four-img" alt="Lockforce Logo">
                 </div>
             </div>
             <div class="two-of-four text order-two" data-aos="fade-left">
@@ -147,7 +150,7 @@
             </div>
             <div class="two-of-four media order-one" data-aos="fade-left">
                 <div>
-                    <img src="/media/bifold-door.webp" class="two-of-four-img" alt="Lockforce Logo">
+                    <img src="/media/patio-doors.png" class="two-of-four-img" alt="Lockforce Logo">
                 </div>
             </div>
         </div>
@@ -195,7 +198,7 @@
             </div>
             <div class="two-of-four media order-one" data-aos="fade-left">
                 <div>
-                    <img src="/media/internal-door.webp" class="two-of-four-img" alt="Lockforce Logo">
+                    <img src="/media/internal-door.png" class="two-of-four-img" alt="Lockforce Logo">
                 </div>
             </div>
         </div>
@@ -233,8 +236,8 @@
         <div class="container">
             <div class="two-of-four why-us text" data-aos="fade-up">
                 <div>
-                    <h2>Why choose Luxedoors?</h2>
-                    <p>At Luxedoor, we pride ourselves on delivering exceptional service and quality craftsmanship. Our
+                    <h2>Why choose Luxe Doors?</h2>
+                    <p>At Luxe Doors, we pride ourselves on delivering exceptional service and quality craftsmanship. Our
                         team of experts is dedicated to ensuring your doors and windows are not only secure but also
                         enhance the beauty of your property.</p>
                     <ul class="why-us-list">
@@ -340,11 +343,29 @@
                 <h2>REQUEST YOUR FREE QUOTE</h2>
                 <p>Simply fill in your details for your free, no obligation quotation, and click send message</p>
                 <div class="input-field">
-                    <form class="contact-form">
-                        <input type="text" placeholder="Your name" class="name" required>
-                        <input type="email" placeholder="Email" required>
-                        <textarea class="message" placeholder="Your message" required></textarea>
+                    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="text" name="name" placeholder="Your name" class="name" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <select name="service" class="service-dropdown" required>
+                            <option value="" disabled selected>Select a service</option>
+                            <option value="Composite Doors">Composite Doors</option>
+                            <option value="uPVC Windows">uPVC Windows</option>
+                            <option value="Aluminium Bifold Doors">Aluminium Bifold Doors</option>
+                            <option value="Fire Doors">Fire Doors</option>
+                            <option value="Internal Doors">Internal Doors</option>
+                            <option value="Other">Finance</option>
+                         
+                        <textarea class="message" name="message" placeholder="Your message" required></textarea>
+
+                         <!-- Honeypot Spam Protection -->
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                         <!-- Custom Confirmation / Success Page -->
+                         <input type="hidden" name="redirect" value="https://luxedoorsne.co.uk/thankyou.html"> 
+
                         <button type="submit" class="button">Send Message</button>
+
+                        <input type="hidden" name="access_key" value="65eebbed-6114-4b1a-a438-f2f8b05aaa14">
                     </form>
                 </div>
             </div>
@@ -369,8 +390,8 @@
                     </li>
 
                 </ul>
-                <p>&copy; 2025 Lockforce. All rights reserved.</p>
-                <a href="ricardomatos_976@hotmail.com">
+                <p>&copy; 2025 Luxe Doors. All rights reserved.</p>
+                <a href="mailto:mailto:ricardomatos_976@hotmail.com">
                     <p>Website built by RW developments</p>
                 </a>
             </div>

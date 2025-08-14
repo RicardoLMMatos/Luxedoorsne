@@ -344,25 +344,6 @@ i:hover {
   position: relative; top: -10rem; visibility: hidden;
 }
 
-/*Mobile nav */
-/* .mobile-nav a i {
-  font-size: 3.5rem;
-  color: rgb(186, 184, 108);
-  padding: 1.5rem;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-} */
-
-/* .mobile-menu li {
-  text-decoration: none;
-  text-transform: uppercase;
-  list-style: none;
-  list-style: none!important;
-}  */
-
 .mobilenav {
   position: fixed;
   top: 0;
@@ -516,6 +497,17 @@ textarea:focus {
   outline: none;
   border: 0.8px solid #ccc;
   border-color: rgb(186, 184, 108);
+}
+
+.service-dropdown {
+  width: 75%;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: 0.5px solid #ccc;
+  border-radius: .4rem;
+  font-size: 1.6rem;
+  background-color: #fff;
+  color: #3D3C3B;
 }
 
 /* Gallery Section */
@@ -687,6 +679,7 @@ textarea:focus {
   border-radius: 50%;
   height: 50rem;
   width: 50rem;
+  object-fit: cover;
 }
 
 .container-team {
@@ -788,7 +781,7 @@ textarea:focus {
 
 @media only screen and (min-width: 1px) and (max-width: 639px){
   .hero-img{
-    height: auto
+    height: auto;
   }
   .container{
     flex-direction: column!important;
@@ -799,7 +792,7 @@ textarea:focus {
 }
 .button {
   width: 40vw;
-  margin: 0.8rem 0.1rem
+  margin: 0.8rem 0.1rem;
 }
 .two-of-four{
   width: 100%;
@@ -823,6 +816,7 @@ textarea:focus {
 
 .fensa-logo {
   width: 100%;
+  max-width:25vw;
   height: 5rem;
   text-align: center;
 }
@@ -885,9 +879,18 @@ input[type="text"],
 input[type="email"],
 textarea {
   width: 75vw;
-  border: #3D3C3B 0.5px solid;
+  border: #3D3C3B 0.5px solid;  
+}
 
-  
+.service-dropdown{
+  width: 75vw;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: 0.5px solid #ccc;
+  border: 1px solid #3D3C3B;
+  border-radius: .4rem;
+  color: #3D3C3B;
+ 
 }
 
 .underline {
@@ -974,3 +977,14 @@ textarea {
 .disclaimer p {font-size: 1.2rem;
 }
 
+/* Thank you page */
+.thankYou-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.thankYou {
+  margin: 2px solid blue;
+}
