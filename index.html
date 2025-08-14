@@ -343,9 +343,12 @@
                 <h2>REQUEST YOUR FREE QUOTE</h2>
                 <p>Simply fill in your details for your free, no obligation quotation, and click send message</p>
                 <div class="input-field">
-                    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                    <form id="contactForm" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+                        <input type="hidden" name="access_key" value="65eebbed-6114-4b1a-a438-f2f8b05aaa14">
                         <input type="text" name="name" placeholder="Your name" class="name" required>
                         <input type="email" name="email" placeholder="Email" required>
+
                         <select name="service" class="service-dropdown" required>
                             <option value="" disabled selected>Select a service</option>
                             <option value="Composite Doors">Composite Doors</option>
@@ -354,19 +357,22 @@
                             <option value="Fire Doors">Fire Doors</option>
                             <option value="Internal Doors">Internal Doors</option>
                             <option value="Other">Finance</option>
-                         
+                         </select>
+
                         <textarea class="message" name="message" placeholder="Your message" required></textarea>
 
                          <!-- Honeypot Spam Protection -->
                         <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                        <div class="h-captcha" data-captcha="true"></div>
 
                          <!-- Custom Confirmation / Success Page -->
                          <input type="hidden" name="redirect" value="https://luxedoorsne.co.uk/thankyou.html"> 
 
                         <button type="submit" class="button">Send Message</button>
 
-                        <input type="hidden" name="access_key" value="65eebbed-6114-4b1a-a438-f2f8b05aaa14">
                     </form>
+                
                 </div>
             </div>
         </div>
@@ -413,7 +419,18 @@
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
     <script src="/script.js" defer></script>
     <script id="shapo-embed-js" type="text/javascript" src="https://cdn.shapo.io/js/embed.js" defer></script>
-    
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+    <script>
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', function(e) {
+        const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
+        if (!hCaptcha) {
+            e.preventDefault();
+            alert("Please fill out captcha field")
+            return
+        }
+    });
+    </script>
 </body>
 
 </html>
